@@ -11,6 +11,7 @@ import thatdz.pro.testconnectdatabase.entity.CuaHang;
 
 @Service
 public class CuaHangService {
+    // DI cuaHangrepository
     @Autowired
     private CuaHangRepository repository;
 

@@ -11,10 +11,10 @@
     />
 </head>
 <body>
+    <!-- table cua hang -->
 <table class="table">
     <thead>
     <tr>
-        <th scope="col">ID</th>
         <th scope="col">Ten Cua Hang</th>
         <th scope="col">Dia Chi</th>
         <th scope="col">Funtion</th>
@@ -23,7 +23,6 @@
     <tbody>
     <c:forEach items="${listCH}" var="entity">
     <tr>
-        <th scope="row">${entity.id}</th>
         <td>${entity.tenCH}</td>
         <td>${entity.diaChi}</td>
         <td><a href="/delete?id=${entity.id}" class="btn">delete</a> <a href="/edit?id=${entity.id}">update</a></td>

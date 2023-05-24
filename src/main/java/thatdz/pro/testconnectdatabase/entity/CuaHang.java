@@ -22,7 +22,9 @@ import org.springframework.stereotype.Component;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+// khoi tao  bean
 @Component
+//mapping database
 @Entity
 @Table(name ="cua_hang")
 public class CuaHang {

@@ -14,23 +14,11 @@
 	</style>
 </head>
 <body>
-<!-- <form action="/store" method="post" modelAttribute="cuaHang">
-    <lable>ID: </lable>
-    <input type="text" name="id" />
-    <br>
+        <!-- form store new cuahang -->
+<form:form action="/store" method="post" modelAttribute="cuahang">
     <lable>Ten Cua Hang: </lable>
-    <input type="text" name="tenCH" />
-    <br>
-    <lable>Dia Chi: </lable>
-    <input type="text" name="diaChi" />
-    <input type="submit" value="Submit" />
-</form> -->
-<form:form action="/store" method="post" modelAttribute="cuaHang">
-    <lable>ID: </lable>
-    <form:input type="text"  path="id"/>
-    <form:errors path="id"  cssClass="errors"/>
-    <br>
-    <lable>Ten Cua Hang: </lable>
+    <form:errors path="id" cssClass="errors"/>
+    <form:input type="hidden"  path="id"/>
     <form:input type="text"  path="tenCH"/>
     <form:errors path="tenCH" cssClass="errors"/>
     <br>

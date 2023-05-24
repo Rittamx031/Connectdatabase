@@ -15,12 +15,10 @@
 </style>
 </head>
 <body>
-<form:form action="/update" method="post" modelAttribute="cuaHang">
-    <lable>ID: </lable>
-    <form:input type="text"  path="id" />
-    <form:errors path="id"  cssClass="errors"/>
-    <br>
+        <!-- form update cuahang -->
+<form:form action="/update" method="post" modelAttribute="cuahang">
     <lable>Ten Cua Hang: </lable>
+    <form:input type="hidden"  path="id"/>
     <form:input type="text"  path="tenCH"/>
     <form:errors path="tenCH"  cssClass="errors"/>
     <br>
